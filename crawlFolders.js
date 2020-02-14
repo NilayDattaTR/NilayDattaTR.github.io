@@ -6,7 +6,7 @@ function crawlFiles() {
     if(fs.existsSync(root)) {
         const list = fs.readdirSync(root);
         const filepath = list.map(el => {
-            return 'https://github.com/NilayDattaTR/NilayDattaTR.github.io/tree/master/Files/' + el + '/index.html';
+            return 'https://nilaydattatr.github.io/Files/' + el + '/index.html';
         })
         const stringData = filepath.join('\n');
         console.log(stringData);
